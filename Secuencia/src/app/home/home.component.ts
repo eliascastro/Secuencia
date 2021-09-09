@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 import { CreateDialog, DialogData } from './create-dialog/create.dialog';
 import { JoinDialog } from './join-dialog/join.dialog';
 
@@ -10,7 +11,8 @@ import { JoinDialog } from './join-dialog/join.dialog';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, 
+              private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -23,6 +25,7 @@ export class HomeComponent implements OnInit {
 
     createDialogRef.afterClosed().subscribe((res: DialogData) =>{
       console.log("create", res);
+      this.router.navigate(['waiting']);
     });
 
   }

@@ -12,6 +12,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatTableModule } from '@angular/material/table';
+
 import { HomeComponent } from './home/home.component';
 import { WaitingComponent } from './waiting/waiting.component';
 import { GameComponent } from './game/game.component';
@@ -38,6 +40,7 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     MatToolbarModule,
     MatCardModule,
+    MatTableModule,
     FormsModule,
     BrowserModule,
     AppRoutingModule,
