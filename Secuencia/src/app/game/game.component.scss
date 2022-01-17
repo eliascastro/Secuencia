@@ -1,11 +1,17 @@
-.red-card {
-    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);;
+.cards {
+    max-width: 500px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
-.card-red {
-    font-size: 40px;
-    color: red;
+.play-card {
     margin: 10px;
-    width: 100px;
-    height: 150px;
+    width: 80px;
+    height: 100px;
+    font-size: 40px;
+}
+
+.col-red {
+    color: red;
 }

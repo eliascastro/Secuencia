@@ -13,11 +13,11 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatTableModule } from '@angular/material/table';
+import { MatGridListModule } from '@angular/material/grid-list'
 
 import { HomeComponent } from './home/home.component';
 import { WaitingComponent } from './waiting/waiting.component';
 import { GameComponent } from './game/game.component';
-import { StartComponent } from './start/start.component';
 import { CreateDialog } from './home/create-dialog/create.dialog';
 import { JoinDialog } from './home/join-dialog/join.dialog';
 import { FormsModule } from '@angular/forms';
@@ -30,7 +30,6 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     WaitingComponent,
     GameComponent,
-    StartComponent,
   ],
   imports: [
     MatInputModule,
@@ -41,6 +40,7 @@ import { FormsModule } from '@angular/forms';
     MatToolbarModule,
     MatCardModule,
     MatTableModule,
+    MatGridListModule,
     FormsModule,
     BrowserModule,
     AppRoutingModule,
